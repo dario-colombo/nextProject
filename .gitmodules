@@ -1,0 +1,6 @@
+[submodule "mobile/app/frontendcommons"]
+	path = mobile/app/frontendcommons
+	url = https://github.com/dario-colombo/commons.git
+[submodule "web/src/frontendcommons"]
+	path = web/src/frontendcommons
+	url = https://github.com/dario-colombo/commons.git
