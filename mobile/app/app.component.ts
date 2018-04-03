@@ -17,12 +17,10 @@ if (isIOS) {
     moduleId: module.id
 })
 export class AppComponent implements OnInit {
-
     constructor() {
         OnRouteToURL.subscribe((url) => {
             this.handleRouting(url);
         });
-
     }
 
     ngOnInit() {
@@ -35,7 +33,6 @@ export class AppComponent implements OnInit {
         // in production you might want to limit which routes are allowed to deep-link
         const route = url;
         console.log(`AppComponent: Navigate to route '${route}'`);
-
         // Do the routing in the Angular Zone on next tick,
         // to ensure that we're in the right context and router is ready.
        /* setTimeout(() => {
