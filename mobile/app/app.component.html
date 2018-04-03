@@ -1,0 +1,17 @@
+<!--
+<StackLayout>
+    <StackLayout class="nav">
+        <ng-container *ngIf="progressRef.state$ | async; let state">
+            <Progress  [value]="state.value" maxValue="100" class="m-20"></Progress>
+            &lt;!&ndash; <mat-progress-bar *ngIf="state.active" [value]="state.value"></mat-progress-bar>&ndash;&gt;
+        </ng-container>
+      &lt;!&ndash;  <ActivityIndicator #activityIndicator busy="true" width="100" height="100" class="activity-indicator"></ActivityIndicator>&ndash;&gt;
+    </StackLayout>
+-->
+
+    <page-router-outlet></page-router-outlet>
+<!--</StackLayout>
+<page-router-outlet>
+   <ActivityIndicator   #activityIndicator busy="true" width="100" height="100" class="activity-indicator"></ActivityIndicator>
+</page-router-outlet>
+-->

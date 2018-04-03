@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="_sprintf_with_numbered_placeholders_1lf5Nr">"format me %2$s one more time %1$s"</string>
+  <string name="_sprintf_Z2maSUQ">"format me %1$s"</string>
+  <string name="_tabs_calendar_1EDFw5">"caleb swe"</string>
+  <string name="_tabs_setting_L3NW7">"aset swe"</string>
+  <string name="_tabs_booking_Z1uGyBT">"newbok swe"</string>
+  <string name="_tabs_home_Z2aL02E">"homer swe"</string>
+  <string name="_array_6I7z1">"split the translation into multiples lines"</string>
+  <string name="_user_email_BsOGQ">"user.email"</string>
+  <string name="_user_name_leDLh">"user.name"</string>
+  <string name="_ios_info_plist_NSLocationWhenInUseUsageDescription_ZpKiIF">"This will be added to InfoPlist.strings"</string>
+  <string name="_app_name_1k3Sbz">"My app"</string>
+  <string name="app_name">"My app"</string>
+  <string name="title_activity_kimera">"My app"</string>
+</resources>

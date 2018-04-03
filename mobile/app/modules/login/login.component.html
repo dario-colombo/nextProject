@@ -1,0 +1,83 @@
+<GridLayout>
+
+    <GridLayout #background
+                scaleX="1.4"
+                scaleY="1.4"
+                class="background"
+                (loaded)="startBackgroundAnimation(background)">
+
+    </GridLayout>
+
+    <StackLayout #mainContainer
+                 scaleX="0.3"
+                 scaleY="0.3"
+                 (loaded)="startForegroundAnimation(mainContainer)"
+                 class="main-container" shadow elevation="16" cornerRadius="60">
+        <Label
+                class="main-label"
+                text="ALFA ONLINE"
+                [color]="isLoggingIn? 'black' : 'white'"></Label>
+
+        <GridLayout #formControls  (loaded)="startFormAnimation(formControls)"
+                    class="form-controls"
+                    rows="auto, auto"
+                    scaleX="0"
+                    scaleY="0">
+            <TextField
+                    hint="Email Address"
+                    keyboardType="email"
+                    returnKeyType="next"
+                    (returnPress)="focusPassword()"
+                    [(ngModel)]="ActorLoginRequest.Username"
+                    [isEnabled]="!isAuthenticating"
+                    autocorrect="false"
+                    autocapitalizationType="none"
+                    [class.light]="!isLoggingIn"
+                    row="0"></TextField>
+            <TextField #password
+                       hint="Password"
+                       secure="true"
+                       returnKeyType="done"
+                       (returnPress)="login()"
+                       [(ngModel)]="ActorLoginRequest.Password"
+                       [isEnabled]="!isAuthenticating"
+                       [class.light]="!isLoggingIn"
+                       row="1"></TextField>
+
+            <ActivityIndicator
+                    [busy]="isAuthenticating"
+                    rowSpan="2"></ActivityIndicator>
+        </GridLayout>
+
+        <Button
+                [text]="isLoggingIn ? 'Login' : 'Sign up'"
+                [isEnabled]="!isAuthenticating"
+                class="submit-button"
+                (tap)="login()"></Button>
+
+     <!--   <Label
+                class="forgot-password-label"
+                text="Forgot password?"
+                (tap)="forgotPassword()"
+                [opacity]="isLoggingIn ? 1 : 0"></Label>-->
+
+      <!--  <StackLayout #signUpStack
+                     class="sign-up-stack"
+                     (tap)="toggleDisplay()"
+                     translateY="50">
+            <Label
+                    [text]="isLoggingIn ? 'Sign up here' : 'Back to login'"></Label>
+        </StackLayout>-->
+    </StackLayout>
+</GridLayout>
+<!--
+<StackLayout>
+ 
+  
+    <TextField #email  hint="Email Address" keyboardType="email" [(ngModel)]="ActorLoginRequest.Username"
+      autocorrect="false" autocapitalizationType="none"></TextField>
+    <TextField #password hint="Password" secure="true" [(ngModel)]="ActorLoginRequest.Password"></TextField>
+  
+    <Button [text]="isLoggingIn ? 'Sign in' : 'Sign up'" class="submit-button" (tap)="login()"></Button>
+ 
+  </StackLayout>-->

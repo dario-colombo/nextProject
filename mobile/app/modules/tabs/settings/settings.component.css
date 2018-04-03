@@ -1,0 +1,16 @@
+.icon-list{
+    margin-right: 20;
+    color: #0f4671;
+    font-size: 30;
+}
+
+.icon-list:highlighted {
+    animation-name: highlight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes highlight {
+    from { background-color: yellow; }
+    to { background-color: red; }
+}

@@ -1,0 +1,26 @@
+<GridLayout class="page">
+    <ListView   [items]="myItems" class="list-group" >
+        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+            <GridLayout class="list-group-item" rows="auto" columns="50, *" (tap)="onItemTap(item.link)"><!-- -->
+                <!-- <Image row="0" col="0" src="item.icon" class="thumb img-rounded"></Image>-->
+                <Label row="0" col="0" [text]="item.icon" class="fa fa-fw icon-list"></Label>
+                <StackLayout row="0" col="1">
+                    <Label [text]="item.name" class="h4"></Label>
+                    <Label [text]="item.name" textWrap="true" class="list-group-item-text"></Label>
+                </StackLayout>
+            </GridLayout>
+        </ng-template>
+    </ListView>
+
+<!--    <ListView  class="list-group"  [items]="myItems" (itemTap)="onItemTap(item.link)">
+        <ng-template let-item="item" let-i="index">
+            <GridLayout rows="auto" columns="50, *" class="list-group-item">
+                <Label  col="0" [text]="item.icon" class="fa fa-fw icon-list"></Label>
+                <StackLayout  col="1">
+                    <Label  class="h4" [text]='"index: " + i'></Label>
+                    <Label class="list-group-item-text" [text]='"[" + item.name +"] " + item.name'></Label>
+                </StackLayout>
+            </GridLayout>
+        </ng-template>
+    </ListView>-->
+</GridLayout>

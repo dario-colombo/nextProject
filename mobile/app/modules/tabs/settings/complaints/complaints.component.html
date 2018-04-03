@@ -1,0 +1,9 @@
+<ActionBar class="action-bar">
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back"
+                      (tap)="onNavBtnTap()"></NavigationButton>
+    <Label class="action-bar-title" [text]="title"></Label>
+</ActionBar>
+<GridLayout class="page page-content">
+    <Label class="page-icon fa" text="&#xf1ea;"></Label>
+    <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
+</GridLayout>

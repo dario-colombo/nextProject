@@ -1,0 +1,8 @@
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.environment = {
+    production: true,
+    versionCode: 205,
+    apiUrl: 'https://testplatform.snapcode.se/relay/test-1.php',
+    refreshRate: 30000 //30 seconds
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZW52aXJvbm1lbnQucHJvZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImVudmlyb25tZW50LnByb2QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFhLFFBQUEsV0FBVyxHQUFHO0lBQ3ZCLFVBQVUsRUFBRSxJQUFJO0lBQ2hCLFdBQVcsRUFBRSxHQUFHO0lBQ2hCLE1BQU0sRUFBRSxtREFBbUQ7SUFDM0QsV0FBVyxFQUFFLEtBQUssQ0FBQyxZQUFZO0NBRWxDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY29uc3QgZW52aXJvbm1lbnQgPSB7XG4gICAgcHJvZHVjdGlvbjogdHJ1ZSxcbiAgICB2ZXJzaW9uQ29kZTogMjA1LFxuICAgIGFwaVVybDogJ2h0dHBzOi8vdGVzdHBsYXRmb3JtLnNuYXBjb2RlLnNlL3JlbGF5L3Rlc3QtMS5waHAnLFxuICAgIHJlZnJlc2hSYXRlOiAzMDAwMCAvLzMwIHNlY29uZHNcblxufTtcbiJdfQ==

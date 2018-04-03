@@ -1,0 +1,12 @@
+// The file contents for the current environment will overwrite these during build.
+// The build system defaults to the dev environment which uses `environment.ts`, but if you do
+// `ng build --env=prod` then `environment.prod.ts` will be used instead.
+// The list of which env maps to which file can be found in `.angular-cli.json`.
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.environment = {
+    production: false,
+    versionCode: 205,
+    apiUrl: 'https://testplatform.snapcode.se/relay/test-3.php',
+    refreshRate: 10000 //10 seconds
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZW52aXJvbm1lbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJlbnZpcm9ubWVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxtRkFBbUY7QUFDbkYsOEZBQThGO0FBQzlGLHlFQUF5RTtBQUN6RSxnRkFBZ0Y7O0FBRW5FLFFBQUEsV0FBVyxHQUFHO0lBQ3ZCLFVBQVUsRUFBRSxLQUFLO0lBQ2pCLFdBQVcsRUFBRSxHQUFHO0lBQ2hCLE1BQU0sRUFBRSxtREFBbUQ7SUFDM0QsV0FBVyxFQUFFLEtBQUssQ0FBQyxZQUFZO0NBQ2xDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBUaGUgZmlsZSBjb250ZW50cyBmb3IgdGhlIGN1cnJlbnQgZW52aXJvbm1lbnQgd2lsbCBvdmVyd3JpdGUgdGhlc2UgZHVyaW5nIGJ1aWxkLlxuLy8gVGhlIGJ1aWxkIHN5c3RlbSBkZWZhdWx0cyB0byB0aGUgZGV2IGVudmlyb25tZW50IHdoaWNoIHVzZXMgYGVudmlyb25tZW50LnRzYCwgYnV0IGlmIHlvdSBkb1xuLy8gYG5nIGJ1aWxkIC0tZW52PXByb2RgIHRoZW4gYGVudmlyb25tZW50LnByb2QudHNgIHdpbGwgYmUgdXNlZCBpbnN0ZWFkLlxuLy8gVGhlIGxpc3Qgb2Ygd2hpY2ggZW52IG1hcHMgdG8gd2hpY2ggZmlsZSBjYW4gYmUgZm91bmQgaW4gYC5hbmd1bGFyLWNsaS5qc29uYC5cblxuZXhwb3J0IGNvbnN0IGVudmlyb25tZW50ID0ge1xuICAgIHByb2R1Y3Rpb246IGZhbHNlLFxuICAgIHZlcnNpb25Db2RlOiAyMDUsXG4gICAgYXBpVXJsOiAnaHR0cHM6Ly90ZXN0cGxhdGZvcm0uc25hcGNvZGUuc2UvcmVsYXkvdGVzdC0zLnBocCcsXG4gICAgcmVmcmVzaFJhdGU6IDEwMDAwIC8vMTAgc2Vjb25kc1xufTtcbiJdfQ==

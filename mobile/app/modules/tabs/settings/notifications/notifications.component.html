@@ -1,0 +1,15 @@
+<GridLayout rows="" columns="">
+
+    <StackLayout class="p-20">
+        <Button text="Alert" (tap)="showAlert(false)" class="button button-error"></Button>
+        <ios>
+            <Button text="Alert (blurry)" (tap)="showAlert(true)" class="button button-error"></Button>
+        </ios>
+        <Button text="Notification" (tap)="showNotification()" class="button button-success"></Button>
+        <Button text="Bottom sheet" (tap)="showBottomSheet()" class="button button-custom"></Button>
+        <android>
+            <Button text="Simple list" (tap)="showSimpleList()" class="button button-custom-alt"></Button>
+            <Button text="Single choice list" (tap)="showSingleChoiceList()" class="button button-custom-alt"></Button>
+        </android>
+    </StackLayout>
+</GridLayout>

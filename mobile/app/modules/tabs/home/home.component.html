@@ -1,0 +1,119 @@
+<!--<GridLayout rows="*,*"  >-->
+
+<StackLayout height="50%">
+        <GridLayout class="page">
+   <MapView #mapView [latitude]="latitude" [longitude]="longitude"
+                 [zoom]="zoom" [bearing]="bearing"
+                 [tilt]="tilt" i-padding="50,50,50,50" [padding]="padding" (mapReady)="onMapReady($event)"
+                 (markerSelect)="onMarkerEvent($event)" (markerBeginDragging)="onMarkerEvent($event)"
+                 (markerEndDragging)="onMarkerEvent($event)" (markerDrag)="onMarkerEvent($event)"
+                 (markerInfoWindowTapped)="onMarkerEvent($event)" (coordinateTapped)="onCoordinateTapped($event)"
+                 (cameraChanged)="onCameraChanged($event)"></MapView>
+            <GridLayout rows="auto">
+             <!--   <SearchBar hint="Enter an address..." id="search" keyboardType="text" style="background-color: white; margin: 10;"></SearchBar>-->
+            <button text="test overlay"></button>
+            </GridLayout>
+     <!--<SearchBar hint="Enter an address..." id="search" keyboardType="text" style="background-color: white; margin: 10;"></SearchBar>-->
+            <!--</GridLayout>
+<!--        <RadListView [items]="bookingList.ActorNotificationList">
+            <ng-template tkListItemTemplate let-item="item">
+                <StackLayout orientation="vertical">
+                    <Label class="nameLabel" [text]="item.Id"></Label>
+                    <Label class="descriptionLabel" [text]="item.Status"></Label>
+                </StackLayout>
+            </ng-template>
+        </RadListView>-->
+
+        </GridLayout>
+    </StackLayout>
+    <StackLayout height="50%">
+        <ScrollView orientation="horizontal">
+            <GridLayout columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
+                <ScrollView col="0" orientation="vertical" width="{{colWidth}}">
+                    <FlexboxLayout flexDirection="column" justifyContent="space-between">
+                        <!--Add your page content here-->
+                        <StackLayout flexGrow="1">
+
+                        </StackLayout>
+                        <!--Want to make this dock to the bottom of the screen regardless of above StackLayout's height -->
+                        <StackLayout>
+                            <Button dock="bottom" text="add booking"
+                                    style="background-color: #AA0078; margin: 5;"></Button>
+                        </StackLayout>
+                    </FlexboxLayout>
+
+                </ScrollView>
+                <ScrollView col="1" orientation="vertical" width="{{colWidth}}">
+                    <FlexboxLayout flexDirection="column" justifyContent="space-between">
+                        <!--Add your page content here-->
+                        <StackLayout flexGrow="1">
+                            <Button dock="top" text="date" style="background-color: #B3B3D7; margin: 5;"></Button>
+
+                        </StackLayout>
+                        <!--Want to make this dock to the bottom of the screen regardless of above StackLayout's height -->
+                        <StackLayout>
+                            <Button dock="bottom" text="add booking"
+                                    style="background-color: #AA0078; margin: 5;"></Button>
+                        </StackLayout>
+                    </FlexboxLayout>
+
+                </ScrollView>
+                <ScrollView col="2" orientation="vertical" width="{{colWidth}}">
+                    <FlexboxLayout flexDirection="column" justifyContent="space-between">
+                        <!--Add your page content here-->
+                        <StackLayout flexGrow="1">
+                            <Button dock="top" text="date" style="background-color: #B3B3D7; margin: 5;"></Button>
+                            <Button dock="top" text="tiket" style="background-color: #48d772; margin: 5;"></Button>
+                            <Button dock="top" text="tiket" style="background-color: #48d772; margin: 5;"></Button>
+                        </StackLayout>
+                        <!--Want to make this dock to the bottom of the screen regardless of above StackLayout's height -->
+                        <StackLayout>
+                            <Button dock="bottom" text="add booking"
+                                    style="background-color: #AA0078; margin: 5;"></Button>
+                        </StackLayout>
+                    </FlexboxLayout>
+
+                </ScrollView>
+                <ScrollView col="3" orientation="vertical" width="{{colWidth}}">
+                    <FlexboxLayout flexDirection="column" justifyContent="space-between">
+                        <!--Add your page content here-->
+                        <StackLayout flexGrow="1">
+                            <Button dock="top" text="date" style="background-color: #B3B3D7; margin: 5;"></Button>
+                            <Button dock="top" text="tiket" style="background-color: #48d772; margin: 5;"></Button>
+                            <Button dock="top" text="tiket" style="background-color: #48d772; margin: 5;"></Button>
+                            <Button dock="top" text="tiket" style="background-color: #48d772; margin: 5;"></Button>
+                            <Button dock="top" text="tiket" style="background-color: #48d772; margin: 5;"></Button>
+                            <Button dock="top" text="tiket" style="background-color: #48d772; margin: 5;"></Button>
+                            <Button dock="top" text="tiket" style="background-color: #48d772; margin: 5;"></Button>
+                        </StackLayout>
+                        <!--Want to make this dock to the bottom of the screen regardless of above StackLayout's height -->
+                        <StackLayout>
+                            <Button dock="bottom" text="add booking"
+                                    style="background-color: #AA0078; margin: 5;"></Button>
+                        </StackLayout>
+                    </FlexboxLayout>
+
+                </ScrollView>
+                <ScrollView col="4" orientation="vertical" width="{{colWidth}}">
+                    <FlexboxLayout flexDirection="column" justifyContent="space-between">
+                        <!--Add your page content here-->
+                        <StackLayout flexGrow="1">
+                            <Button dock="top" text="date" style="background-color: #B3B3D7; margin: 5;"></Button>
+                            <Button dock="top" text="tiket" style="background-color: #48d772; margin: 5;"></Button>
+                            <Button dock="top" text="tiket" style="background-color: #48d772; margin: 5;"></Button>
+                        </StackLayout>
+                        <!--Want to make this dock to the bottom of the screen regardless of above StackLayout's height -->
+                        <StackLayout>
+                            <Button dock="bottom" text="add booking"
+                                    style="background-color: #AA0078; margin: 5;"></Button>
+                        </StackLayout>
+                    </FlexboxLayout>
+
+                </ScrollView>
+
+
+            </GridLayout>
+        </ScrollView>
+    </StackLayout>
+<!--
+</GridLayout>-->

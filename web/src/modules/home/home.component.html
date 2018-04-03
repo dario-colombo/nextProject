@@ -1,0 +1,5 @@
+<div>home</div>
+<div *ngFor="let booking of bookingList" (click)="getSpecificBookings(booking.BookingId)">{{booking.BookingId}}</div>
+<div ><pre>{{new_booking | json}}</pre></div>
+<div ><button (click)="getBookingSolution()">search</button></div>
+<div ><button (click)="logout()">logout</button></div>

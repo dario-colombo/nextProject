@@ -1,0 +1,18 @@
+<GridLayout class="page page-content" *ngIf="messageList">
+    <RadListView  [items]="messageList" >
+        <ng-template let-item="item">
+            <StackLayout orientation="vertical">
+                <Label class="nameLabel" [text]="item.Id"></Label>
+                <Label class="descriptionLabel" [text]="item.Text"></Label>
+            </StackLayout>
+        </ng-template>
+    </RadListView>
+<!--    <ListView [items]="messageList" (itemTap)="onItemTap($event)">
+        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+            <StackLayout [class.odd]="odd" [class.even]="even">
+                <Label [text]='"index: " + i'></Label>
+                <Label [text]='"[" + item.Id +"] " + item.Text'></Label>
+            </StackLayout>
+        </ng-template>
+    </ListView>-->
+</GridLayout>

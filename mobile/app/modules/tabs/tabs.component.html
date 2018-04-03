@@ -1,0 +1,18 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" [text]="title"></Label>
+</ActionBar>
+<TabView #myTabView (selectedIndexChanged)="onSelectedIndexChanged($event)"
+         iosIconRenderingMode="alwaysOriginal"
+         (loaded)="delayTbLoad($event)"
+         class="tab-view fa"><!--  (unloaded)="onTabViewUnloaded($event)" -->
+    <StackLayout *tabItem="{title: '&#xf015; '+ variant}">
+        <Home></Home>
+    </StackLayout>
+    <StackLayout *tabItem="{title:'&#xf055;  New booking'}">
+        <NewBooking></NewBooking>
+    </StackLayout>
+    <StackLayout *tabItem="{title: '&#xf1de;  Settings'}" badgeValue="{{messageCountUnread}}"><!---->
+        <Settings></Settings>
+    </StackLayout>
+</TabView>
+

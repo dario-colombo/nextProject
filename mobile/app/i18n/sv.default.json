@@ -1,0 +1,22 @@
+{
+  "app.name": "My app",
+  "ios.info.plist": {
+    "NSLocationWhenInUseUsageDescription": "This will be added to InfoPlist.strings"
+  },
+  "user": {
+    "name": "user.name",
+    "email": "user.email"
+  },
+  "array": [
+    "split the translation into ",
+    "multiples lines"
+  ],
+  "tabs":{
+    "home":"homer swe",
+    "booking":"newbok swe",
+    "setting":"aset swe",
+    "calendar":"caleb swe"
+  },
+  "sprintf": "format me %s",
+  "sprintf with numbered placeholders": "format me %2$s one more time %1$s"
+}
